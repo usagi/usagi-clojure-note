@@ -26,3 +26,7 @@ Clojureは.netにも対応していると聞いたのでようやく試してみ
 
 - Usagi Ito <usagi@WonderRabbitProject.net>
 
+## Contributor
+
+- func\_hs 
+    - http://func-hs.blogspot.jp/
