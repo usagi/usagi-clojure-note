@@ -62,17 +62,19 @@ Leiningenのgithubリポジトリーのタグを覗いても分かる。
 なお、蛇足として lein-2.4.3 でも`lein repl`ではなく、
 `clojure`コマンドを直接叩けば`println`も含め問題無く利用はできる。
 
-> nREPL server started on port 53298 on host 127.0.0.1 - nrepl://127.0.0.1:53298
-> REPL-y 0.3.1
-> Clojure 1.6.0
->     Docs: (doc function-name-here)
->           (find-doc "part-of-name-here")
->   Source: (source function-name-here)
->  Javadoc: (javadoc java-object-or-class-here)
->     Exit: Control+D or (exit) or (quit)
->  Results: Stored in vars *1, *2, *3, an exception in *e
-> 
-> user=> 
+```clojure
+nREPL server started on port 53298 on host 127.0.0.1 - nrepl://127.0.0.1:53298
+REPL-y 0.3.1
+Clojure 1.6.0
+    Docs: (doc function-name-here)
+          (find-doc "part-of-name-here")
+  Source: (source function-name-here)
+ Javadoc: (javadoc java-object-or-class-here)
+    Exit: Control+D or (exit) or (quit)
+ Results: Stored in vars *1, *2, *3, an exception in *e
+
+user=> 
+```
 
 `(+ 1 2 3)`、`(* 2 3 4)`、`(println "Clojure on JVM")` など試して
 簡単な動作確認とできる。
@@ -176,8 +178,10 @@ lein clr repl
 
 とすると、.net 4.0 の Clojure REPL 処理系が動作する。
 
-> true
-> user=> 
+```clojure
+true
+user=> 
+```
 
 `(+ 1 2 3 )`、`(println "Clojure on .net/mono-4.0")`などして動作確認すると良い。
 
@@ -188,7 +192,7 @@ lein clr repl
 JVMの場合のドキュメントを参考に類推。その通りで通用した。
 
 ```clojure
-(System.Console/WriteLine "Hello System.Console.WriteLine from Clojure!)
+(System.Console/WriteLine "Hello System.Console.WriteLine from Clojure!")
 ```
 
 `名前空間/メソッド名 実引数1 実引数2 ..`と言った具合で呼び出せる。
