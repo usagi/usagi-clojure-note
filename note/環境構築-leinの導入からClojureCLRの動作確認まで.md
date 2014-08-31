@@ -1,10 +1,12 @@
-# leiningen
+# 環境構築-leinの導入からClojureCLRの動作確認まで
+
+## leiningen
 
 Clojureのパッケージマネージャーも兼ねた統合開発コマンドラインツールみたいな何からしい。
 
 - http://leiningen.org/
 
-## install
+### install
 
 - debian: https://packages.debian.org/search?keywords=leiningen&searchon=names&suite=all&section=all
     - wheezy 以降にはパッケージが存在。しかし、2013年で保守されなくなり旧すぎる。
@@ -81,9 +83,9 @@ Leiningenのgithubリポジトリーのタグを覗いても分かる。
 なお、`lein`関連のファイル群は`~/.lein`に入っていて、
 これを削除すれば`lein`によって導入されたパッケージなどは全て消える。
 
-## LeiningenCLR による .net/mono 対応
+### LeiningenCLR による .net/mono 対応
 
-### ClojureCLR の導入
+#### ClojureCLR の導入
 
 - https://github.com/clojure/clojure-clr
 
@@ -194,7 +196,7 @@ JVMの場合のドキュメントを参考に類推。その通りで通用し�
 
 なお、`lein clr repl`の終了は`CTRL+D`で行う。
 
-## 他のプラグインの存在
+### 他のプラグインの存在
 
 - https://github.com/technomancy/leiningen/wiki/Plugins
 
